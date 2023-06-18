@@ -1,0 +1,394 @@
+2022-12-21 23:18:55,901 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1, distributed training: False, 16-bits training: False
+2022-12-21 23:18:55,902 - INFO - __main__ -   {'DA': True, 'T': 1, 'amp': False, 'arch': 'wideresnet', 'batch_size': 64, 'dataset': 'cifar10', 'device': device(type='cuda', index=0), 'ema_decay': 0.999, 'eval_step': 1024, 'expand_labels': False, 'gpu_id': 0, 'im_ratio': 100.0, 'k': 2, 'label_ratio': 0.1, 'lambda_k': 0.5, 'lambda_scl': 1, 'lambda_u': 1, 'local_rank': -1, 'lr': 0.03, 'mu': 7, 'n_gpu': 1, 'nesterov': True, 'no_progress': False, 'num_labeled': 4000, 'num_workers': 8, 'opt_level': 'O1', 'out': 'results/ratio_100_0.1/cifar.1/expe', 'resume': '', 'seed': 1, 'st': 0.5, 'start_epoch': 0, 'threshold': 0.95, 'threshold_2': 0.9, 'total_steps': 65536, 'use_ema': True, 'warmup': 0, 'wdecay': 0.0005, 'world_size': 1}
+2022-12-21 23:18:58,435 - INFO - models.wideresnet -   Model: WideResNet 28x2
+2022-12-21 23:18:58,468 - INFO - __main__ -   Total params: 1.50M
+2022-12-21 23:18:59,761 - INFO - __main__ -   ***** Running training *****
+2022-12-21 23:18:59,762 - INFO - __main__ -     Task = cifar10@4000
+2022-12-21 23:18:59,762 - INFO - __main__ -     Num Epochs = 64
+2022-12-21 23:18:59,762 - INFO - __main__ -     Batch size per GPU = 64
+2022-12-21 23:18:59,762 - INFO - __main__ -     Total train batch size = 64
+2022-12-21 23:18:59,762 - INFO - __main__ -     Total optimization steps = 65536
+2022-12-21 23:26:17,550 - INFO - __main__ -   top-1 acc: 22.62
+2022-12-21 23:26:17,551 - INFO - __main__ -   top-5 acc: 75.09
+2022-12-21 23:26:17,622 - INFO - __main__ -   Train Epoch: 1/  64
+2022-12-21 23:26:17,622 - INFO - __main__ -   Best top-1 acc: 22.62
+2022-12-21 23:26:17,623 - INFO - __main__ -   Mean top-1 acc: 22.62
+
+2022-12-21 23:33:43,753 - INFO - __main__ -   top-1 acc: 37.04
+2022-12-21 23:33:43,754 - INFO - __main__ -   top-5 acc: 88.14
+2022-12-21 23:33:43,852 - INFO - __main__ -   Train Epoch: 2/  64
+2022-12-21 23:33:43,853 - INFO - __main__ -   Best top-1 acc: 37.04
+2022-12-21 23:33:43,853 - INFO - __main__ -   Mean top-1 acc: 29.83
+
+2022-12-21 23:41:01,942 - INFO - __main__ -   top-1 acc: 43.10
+2022-12-21 23:41:01,942 - INFO - __main__ -   top-5 acc: 91.19
+2022-12-21 23:41:02,032 - INFO - __main__ -   Train Epoch: 3/  64
+2022-12-21 23:41:02,032 - INFO - __main__ -   Best top-1 acc: 43.10
+2022-12-21 23:41:02,033 - INFO - __main__ -   Mean top-1 acc: 34.25
+
+2022-12-21 23:48:27,647 - INFO - __main__ -   top-1 acc: 47.92
+2022-12-21 23:48:27,647 - INFO - __main__ -   top-5 acc: 93.24
+2022-12-21 23:48:27,745 - INFO - __main__ -   Train Epoch: 4/  64
+2022-12-21 23:48:27,745 - INFO - __main__ -   Best top-1 acc: 47.92
+2022-12-21 23:48:27,745 - INFO - __main__ -   Mean top-1 acc: 37.67
+
+2022-12-21 23:55:56,277 - INFO - __main__ -   top-1 acc: 52.34
+2022-12-21 23:55:56,277 - INFO - __main__ -   top-5 acc: 94.31
+2022-12-21 23:55:56,362 - INFO - __main__ -   Train Epoch: 5/  64
+2022-12-21 23:55:56,362 - INFO - __main__ -   Best top-1 acc: 52.34
+2022-12-21 23:55:56,362 - INFO - __main__ -   Mean top-1 acc: 40.60
+
+2022-12-22 00:03:31,295 - INFO - __main__ -   top-1 acc: 56.10
+2022-12-22 00:03:31,296 - INFO - __main__ -   top-5 acc: 95.08
+2022-12-22 00:03:31,374 - INFO - __main__ -   Train Epoch: 6/  64
+2022-12-22 00:03:31,374 - INFO - __main__ -   Best top-1 acc: 56.10
+2022-12-22 00:03:31,374 - INFO - __main__ -   Mean top-1 acc: 43.19
+
+2022-12-22 00:11:09,947 - INFO - __main__ -   top-1 acc: 58.46
+2022-12-22 00:11:09,948 - INFO - __main__ -   top-5 acc: 95.37
+2022-12-22 00:11:10,030 - INFO - __main__ -   Train Epoch: 7/  64
+2022-12-22 00:11:10,030 - INFO - __main__ -   Best top-1 acc: 58.46
+2022-12-22 00:11:10,030 - INFO - __main__ -   Mean top-1 acc: 45.37
+
+2022-12-22 00:19:10,357 - INFO - __main__ -   top-1 acc: 59.78
+2022-12-22 00:19:10,358 - INFO - __main__ -   top-5 acc: 95.67
+2022-12-22 00:19:10,442 - INFO - __main__ -   Train Epoch: 8/  64
+2022-12-22 00:19:10,443 - INFO - __main__ -   Best top-1 acc: 59.78
+2022-12-22 00:19:10,443 - INFO - __main__ -   Mean top-1 acc: 47.17
+
+2022-12-22 00:26:32,977 - INFO - __main__ -   top-1 acc: 61.19
+2022-12-22 00:26:32,977 - INFO - __main__ -   top-5 acc: 96.05
+2022-12-22 00:26:33,061 - INFO - __main__ -   Train Epoch: 9/  64
+2022-12-22 00:26:33,061 - INFO - __main__ -   Best top-1 acc: 61.19
+2022-12-22 00:26:33,062 - INFO - __main__ -   Mean top-1 acc: 48.73
+
+2022-12-22 00:33:59,197 - INFO - __main__ -   top-1 acc: 62.28
+2022-12-22 00:33:59,197 - INFO - __main__ -   top-5 acc: 96.34
+2022-12-22 00:33:59,280 - INFO - __main__ -   Train Epoch: 10/  64
+2022-12-22 00:33:59,281 - INFO - __main__ -   Best top-1 acc: 62.28
+2022-12-22 00:33:59,281 - INFO - __main__ -   Mean top-1 acc: 50.08
+
+2022-12-22 00:41:29,668 - INFO - __main__ -   top-1 acc: 63.44
+2022-12-22 00:41:29,668 - INFO - __main__ -   top-5 acc: 96.53
+2022-12-22 00:41:29,751 - INFO - __main__ -   Train Epoch: 11/  64
+2022-12-22 00:41:29,752 - INFO - __main__ -   Best top-1 acc: 63.44
+2022-12-22 00:41:29,752 - INFO - __main__ -   Mean top-1 acc: 51.30
+
+2022-12-22 00:48:58,535 - INFO - __main__ -   top-1 acc: 64.54
+2022-12-22 00:48:58,536 - INFO - __main__ -   top-5 acc: 96.84
+2022-12-22 00:48:58,616 - INFO - __main__ -   Train Epoch: 12/  64
+2022-12-22 00:48:58,616 - INFO - __main__ -   Best top-1 acc: 64.54
+2022-12-22 00:48:58,617 - INFO - __main__ -   Mean top-1 acc: 52.40
+
+2022-12-22 00:56:33,196 - INFO - __main__ -   top-1 acc: 65.43
+2022-12-22 00:56:33,196 - INFO - __main__ -   top-5 acc: 97.03
+2022-12-22 00:56:33,276 - INFO - __main__ -   Train Epoch: 13/  64
+2022-12-22 00:56:33,276 - INFO - __main__ -   Best top-1 acc: 65.43
+2022-12-22 00:56:33,276 - INFO - __main__ -   Mean top-1 acc: 53.40
+
+2022-12-22 01:04:09,343 - INFO - __main__ -   top-1 acc: 66.55
+2022-12-22 01:04:09,343 - INFO - __main__ -   top-5 acc: 97.23
+2022-12-22 01:04:09,435 - INFO - __main__ -   Train Epoch: 14/  64
+2022-12-22 01:04:09,435 - INFO - __main__ -   Best top-1 acc: 66.55
+2022-12-22 01:04:09,435 - INFO - __main__ -   Mean top-1 acc: 54.34
+
+2022-12-22 01:11:37,664 - INFO - __main__ -   top-1 acc: 66.92
+2022-12-22 01:11:37,664 - INFO - __main__ -   top-5 acc: 97.38
+2022-12-22 01:11:37,753 - INFO - __main__ -   Train Epoch: 15/  64
+2022-12-22 01:11:37,753 - INFO - __main__ -   Best top-1 acc: 66.92
+2022-12-22 01:11:37,753 - INFO - __main__ -   Mean top-1 acc: 55.18
+
+2022-12-22 01:19:09,598 - INFO - __main__ -   top-1 acc: 67.10
+2022-12-22 01:19:09,598 - INFO - __main__ -   top-5 acc: 97.33
+2022-12-22 01:19:09,682 - INFO - __main__ -   Train Epoch: 16/  64
+2022-12-22 01:19:09,683 - INFO - __main__ -   Best top-1 acc: 67.10
+2022-12-22 01:19:09,683 - INFO - __main__ -   Mean top-1 acc: 55.93
+
+2022-12-22 01:26:40,258 - INFO - __main__ -   top-1 acc: 67.71
+2022-12-22 01:26:40,258 - INFO - __main__ -   top-5 acc: 97.34
+2022-12-22 01:26:40,340 - INFO - __main__ -   Train Epoch: 17/  64
+2022-12-22 01:26:40,340 - INFO - __main__ -   Best top-1 acc: 67.71
+2022-12-22 01:26:40,340 - INFO - __main__ -   Mean top-1 acc: 56.62
+
+2022-12-22 01:34:13,315 - INFO - __main__ -   top-1 acc: 68.45
+2022-12-22 01:34:13,315 - INFO - __main__ -   top-5 acc: 97.42
+2022-12-22 01:34:13,399 - INFO - __main__ -   Train Epoch: 18/  64
+2022-12-22 01:34:13,399 - INFO - __main__ -   Best top-1 acc: 68.45
+2022-12-22 01:34:13,400 - INFO - __main__ -   Mean top-1 acc: 57.28
+
+2022-12-22 01:41:43,776 - INFO - __main__ -   top-1 acc: 68.60
+2022-12-22 01:41:43,776 - INFO - __main__ -   top-5 acc: 97.51
+2022-12-22 01:41:43,858 - INFO - __main__ -   Train Epoch: 19/  64
+2022-12-22 01:41:43,858 - INFO - __main__ -   Best top-1 acc: 68.60
+2022-12-22 01:41:43,859 - INFO - __main__ -   Mean top-1 acc: 57.87
+
+2022-12-22 01:49:13,997 - INFO - __main__ -   top-1 acc: 68.81
+2022-12-22 01:49:13,998 - INFO - __main__ -   top-5 acc: 97.54
+2022-12-22 01:49:14,077 - INFO - __main__ -   Train Epoch: 20/  64
+2022-12-22 01:49:14,077 - INFO - __main__ -   Best top-1 acc: 68.81
+2022-12-22 01:49:14,077 - INFO - __main__ -   Mean top-1 acc: 58.42
+
+2022-12-22 01:56:44,919 - INFO - __main__ -   top-1 acc: 68.84
+2022-12-22 01:56:44,919 - INFO - __main__ -   top-5 acc: 97.73
+2022-12-22 01:56:45,000 - INFO - __main__ -   Train Epoch: 21/  64
+2022-12-22 01:56:45,001 - INFO - __main__ -   Best top-1 acc: 68.84
+2022-12-22 01:56:45,001 - INFO - __main__ -   Mean top-1 acc: 60.73
+
+2022-12-22 02:04:20,878 - INFO - __main__ -   top-1 acc: 69.35
+2022-12-22 02:04:20,878 - INFO - __main__ -   top-5 acc: 97.71
+2022-12-22 02:04:20,961 - INFO - __main__ -   Train Epoch: 22/  64
+2022-12-22 02:04:20,962 - INFO - __main__ -   Best top-1 acc: 69.35
+2022-12-22 02:04:20,962 - INFO - __main__ -   Mean top-1 acc: 62.35
+
+2022-12-22 02:11:56,745 - INFO - __main__ -   top-1 acc: 69.48
+2022-12-22 02:11:56,745 - INFO - __main__ -   top-5 acc: 97.72
+2022-12-22 02:11:56,828 - INFO - __main__ -   Train Epoch: 23/  64
+2022-12-22 02:11:56,828 - INFO - __main__ -   Best top-1 acc: 69.48
+2022-12-22 02:11:56,828 - INFO - __main__ -   Mean top-1 acc: 63.66
+
+2022-12-22 02:19:25,157 - INFO - __main__ -   top-1 acc: 69.66
+2022-12-22 02:19:25,157 - INFO - __main__ -   top-5 acc: 97.76
+2022-12-22 02:19:25,235 - INFO - __main__ -   Train Epoch: 24/  64
+2022-12-22 02:19:25,235 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:19:25,235 - INFO - __main__ -   Mean top-1 acc: 64.75
+
+2022-12-22 02:27:02,144 - INFO - __main__ -   top-1 acc: 69.20
+2022-12-22 02:27:02,144 - INFO - __main__ -   top-5 acc: 97.80
+2022-12-22 02:27:02,215 - INFO - __main__ -   Train Epoch: 25/  64
+2022-12-22 02:27:02,215 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:27:02,215 - INFO - __main__ -   Mean top-1 acc: 65.59
+
+2022-12-22 02:34:33,951 - INFO - __main__ -   top-1 acc: 69.12
+2022-12-22 02:34:33,951 - INFO - __main__ -   top-5 acc: 97.77
+2022-12-22 02:34:34,015 - INFO - __main__ -   Train Epoch: 26/  64
+2022-12-22 02:34:34,015 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:34:34,015 - INFO - __main__ -   Mean top-1 acc: 66.25
+
+2022-12-22 02:42:00,825 - INFO - __main__ -   top-1 acc: 69.45
+2022-12-22 02:42:00,825 - INFO - __main__ -   top-5 acc: 97.69
+2022-12-22 02:42:00,888 - INFO - __main__ -   Train Epoch: 27/  64
+2022-12-22 02:42:00,888 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:42:00,888 - INFO - __main__ -   Mean top-1 acc: 66.79
+
+2022-12-22 02:49:30,756 - INFO - __main__ -   top-1 acc: 69.41
+2022-12-22 02:49:30,757 - INFO - __main__ -   top-5 acc: 97.76
+2022-12-22 02:49:30,819 - INFO - __main__ -   Train Epoch: 28/  64
+2022-12-22 02:49:30,819 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:49:30,820 - INFO - __main__ -   Mean top-1 acc: 67.28
+
+2022-12-22 02:56:57,387 - INFO - __main__ -   top-1 acc: 69.63
+2022-12-22 02:56:57,388 - INFO - __main__ -   top-5 acc: 97.65
+2022-12-22 02:56:57,450 - INFO - __main__ -   Train Epoch: 29/  64
+2022-12-22 02:56:57,451 - INFO - __main__ -   Best top-1 acc: 69.66
+2022-12-22 02:56:57,451 - INFO - __main__ -   Mean top-1 acc: 67.70
+
+2022-12-22 03:04:21,030 - INFO - __main__ -   top-1 acc: 69.80
+2022-12-22 03:04:21,031 - INFO - __main__ -   top-5 acc: 97.75
+2022-12-22 03:04:21,111 - INFO - __main__ -   Train Epoch: 30/  64
+2022-12-22 03:04:21,111 - INFO - __main__ -   Best top-1 acc: 69.80
+2022-12-22 03:04:21,111 - INFO - __main__ -   Mean top-1 acc: 68.07
+
+2022-12-22 03:11:52,303 - INFO - __main__ -   top-1 acc: 69.71
+2022-12-22 03:11:52,304 - INFO - __main__ -   top-5 acc: 97.64
+2022-12-22 03:11:52,365 - INFO - __main__ -   Train Epoch: 31/  64
+2022-12-22 03:11:52,365 - INFO - __main__ -   Best top-1 acc: 69.80
+2022-12-22 03:11:52,366 - INFO - __main__ -   Mean top-1 acc: 68.39
+
+2022-12-22 03:19:23,855 - INFO - __main__ -   top-1 acc: 70.20
+2022-12-22 03:19:23,855 - INFO - __main__ -   top-5 acc: 97.87
+2022-12-22 03:19:23,939 - INFO - __main__ -   Train Epoch: 32/  64
+2022-12-22 03:19:23,939 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:19:23,940 - INFO - __main__ -   Mean top-1 acc: 68.67
+
+2022-12-22 03:26:55,730 - INFO - __main__ -   top-1 acc: 70.15
+2022-12-22 03:26:55,731 - INFO - __main__ -   top-5 acc: 97.82
+2022-12-22 03:26:55,796 - INFO - __main__ -   Train Epoch: 33/  64
+2022-12-22 03:26:55,797 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:26:55,797 - INFO - __main__ -   Mean top-1 acc: 68.91
+
+2022-12-22 03:34:27,215 - INFO - __main__ -   top-1 acc: 69.91
+2022-12-22 03:34:27,216 - INFO - __main__ -   top-5 acc: 97.84
+2022-12-22 03:34:27,278 - INFO - __main__ -   Train Epoch: 34/  64
+2022-12-22 03:34:27,279 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:34:27,279 - INFO - __main__ -   Mean top-1 acc: 69.08
+
+2022-12-22 03:41:57,957 - INFO - __main__ -   top-1 acc: 69.47
+2022-12-22 03:41:57,957 - INFO - __main__ -   top-5 acc: 97.81
+2022-12-22 03:41:58,026 - INFO - __main__ -   Train Epoch: 35/  64
+2022-12-22 03:41:58,027 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:41:58,027 - INFO - __main__ -   Mean top-1 acc: 69.20
+
+2022-12-22 03:49:27,759 - INFO - __main__ -   top-1 acc: 69.54
+2022-12-22 03:49:27,759 - INFO - __main__ -   top-5 acc: 97.79
+2022-12-22 03:49:27,819 - INFO - __main__ -   Train Epoch: 36/  64
+2022-12-22 03:49:27,819 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:49:27,820 - INFO - __main__ -   Mean top-1 acc: 69.32
+
+2022-12-22 03:57:04,784 - INFO - __main__ -   top-1 acc: 69.68
+2022-12-22 03:57:04,784 - INFO - __main__ -   top-5 acc: 97.77
+2022-12-22 03:57:04,848 - INFO - __main__ -   Train Epoch: 37/  64
+2022-12-22 03:57:04,849 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 03:57:04,849 - INFO - __main__ -   Mean top-1 acc: 69.42
+
+2022-12-22 04:04:29,424 - INFO - __main__ -   top-1 acc: 69.46
+2022-12-22 04:04:29,424 - INFO - __main__ -   top-5 acc: 97.66
+2022-12-22 04:04:29,487 - INFO - __main__ -   Train Epoch: 38/  64
+2022-12-22 04:04:29,487 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:04:29,487 - INFO - __main__ -   Mean top-1 acc: 69.47
+
+2022-12-22 04:12:29,014 - INFO - __main__ -   top-1 acc: 69.05
+2022-12-22 04:12:29,015 - INFO - __main__ -   top-5 acc: 97.64
+2022-12-22 04:12:29,076 - INFO - __main__ -   Train Epoch: 39/  64
+2022-12-22 04:12:29,077 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:12:29,077 - INFO - __main__ -   Mean top-1 acc: 69.50
+
+2022-12-22 04:20:06,635 - INFO - __main__ -   top-1 acc: 68.97
+2022-12-22 04:20:06,636 - INFO - __main__ -   top-5 acc: 97.57
+2022-12-22 04:20:06,693 - INFO - __main__ -   Train Epoch: 40/  64
+2022-12-22 04:20:06,693 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:20:06,694 - INFO - __main__ -   Mean top-1 acc: 69.50
+
+2022-12-22 04:27:40,343 - INFO - __main__ -   top-1 acc: 69.25
+2022-12-22 04:27:40,343 - INFO - __main__ -   top-5 acc: 97.58
+2022-12-22 04:27:40,405 - INFO - __main__ -   Train Epoch: 41/  64
+2022-12-22 04:27:40,405 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:27:40,406 - INFO - __main__ -   Mean top-1 acc: 69.52
+
+2022-12-22 04:35:09,397 - INFO - __main__ -   top-1 acc: 69.18
+2022-12-22 04:35:09,398 - INFO - __main__ -   top-5 acc: 97.55
+2022-12-22 04:35:09,460 - INFO - __main__ -   Train Epoch: 42/  64
+2022-12-22 04:35:09,461 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:35:09,461 - INFO - __main__ -   Mean top-1 acc: 69.52
+
+2022-12-22 04:42:41,870 - INFO - __main__ -   top-1 acc: 68.95
+2022-12-22 04:42:41,870 - INFO - __main__ -   top-5 acc: 97.46
+2022-12-22 04:42:41,934 - INFO - __main__ -   Train Epoch: 43/  64
+2022-12-22 04:42:41,935 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:42:41,935 - INFO - __main__ -   Mean top-1 acc: 69.49
+
+2022-12-22 04:50:12,314 - INFO - __main__ -   top-1 acc: 68.98
+2022-12-22 04:50:12,314 - INFO - __main__ -   top-5 acc: 97.56
+2022-12-22 04:50:12,384 - INFO - __main__ -   Train Epoch: 44/  64
+2022-12-22 04:50:12,384 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:50:12,384 - INFO - __main__ -   Mean top-1 acc: 69.46
+
+2022-12-22 04:57:39,254 - INFO - __main__ -   top-1 acc: 68.93
+2022-12-22 04:57:39,254 - INFO - __main__ -   top-5 acc: 97.60
+2022-12-22 04:57:39,318 - INFO - __main__ -   Train Epoch: 45/  64
+2022-12-22 04:57:39,318 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 04:57:39,318 - INFO - __main__ -   Mean top-1 acc: 69.44
+
+2022-12-22 05:05:11,268 - INFO - __main__ -   top-1 acc: 68.97
+2022-12-22 05:05:11,269 - INFO - __main__ -   top-5 acc: 97.46
+2022-12-22 05:05:11,332 - INFO - __main__ -   Train Epoch: 46/  64
+2022-12-22 05:05:11,332 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:05:11,332 - INFO - __main__ -   Mean top-1 acc: 69.43
+
+2022-12-22 05:12:38,144 - INFO - __main__ -   top-1 acc: 68.98
+2022-12-22 05:12:38,144 - INFO - __main__ -   top-5 acc: 97.36
+2022-12-22 05:12:38,209 - INFO - __main__ -   Train Epoch: 47/  64
+2022-12-22 05:12:38,209 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:12:38,209 - INFO - __main__ -   Mean top-1 acc: 69.41
+
+2022-12-22 05:20:04,463 - INFO - __main__ -   top-1 acc: 69.00
+2022-12-22 05:20:04,463 - INFO - __main__ -   top-5 acc: 97.42
+2022-12-22 05:20:04,528 - INFO - __main__ -   Train Epoch: 48/  64
+2022-12-22 05:20:04,528 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:20:04,529 - INFO - __main__ -   Mean top-1 acc: 69.39
+
+2022-12-22 05:27:33,272 - INFO - __main__ -   top-1 acc: 68.80
+2022-12-22 05:27:33,272 - INFO - __main__ -   top-5 acc: 97.39
+2022-12-22 05:27:33,335 - INFO - __main__ -   Train Epoch: 49/  64
+2022-12-22 05:27:33,335 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:27:33,336 - INFO - __main__ -   Mean top-1 acc: 69.35
+
+2022-12-22 05:35:00,463 - INFO - __main__ -   top-1 acc: 69.05
+2022-12-22 05:35:00,464 - INFO - __main__ -   top-5 acc: 97.32
+2022-12-22 05:35:00,527 - INFO - __main__ -   Train Epoch: 50/  64
+2022-12-22 05:35:00,527 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:35:00,528 - INFO - __main__ -   Mean top-1 acc: 69.31
+
+2022-12-22 05:42:25,380 - INFO - __main__ -   top-1 acc: 68.66
+2022-12-22 05:42:25,380 - INFO - __main__ -   top-5 acc: 97.44
+2022-12-22 05:42:25,440 - INFO - __main__ -   Train Epoch: 51/  64
+2022-12-22 05:42:25,441 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:42:25,441 - INFO - __main__ -   Mean top-1 acc: 69.26
+
+2022-12-22 05:50:00,808 - INFO - __main__ -   top-1 acc: 69.02
+2022-12-22 05:50:00,809 - INFO - __main__ -   top-5 acc: 97.42
+2022-12-22 05:50:00,874 - INFO - __main__ -   Train Epoch: 52/  64
+2022-12-22 05:50:00,874 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:50:00,874 - INFO - __main__ -   Mean top-1 acc: 69.20
+
+2022-12-22 05:57:27,175 - INFO - __main__ -   top-1 acc: 68.96
+2022-12-22 05:57:27,175 - INFO - __main__ -   top-5 acc: 97.28
+2022-12-22 05:57:27,237 - INFO - __main__ -   Train Epoch: 53/  64
+2022-12-22 05:57:27,237 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 05:57:27,237 - INFO - __main__ -   Mean top-1 acc: 69.14
+
+2022-12-22 06:04:55,408 - INFO - __main__ -   top-1 acc: 68.65
+2022-12-22 06:04:55,408 - INFO - __main__ -   top-5 acc: 97.20
+2022-12-22 06:04:55,471 - INFO - __main__ -   Train Epoch: 54/  64
+2022-12-22 06:04:55,471 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:04:55,471 - INFO - __main__ -   Mean top-1 acc: 69.08
+
+2022-12-22 06:12:25,882 - INFO - __main__ -   top-1 acc: 68.56
+2022-12-22 06:12:25,882 - INFO - __main__ -   top-5 acc: 97.22
+2022-12-22 06:12:25,946 - INFO - __main__ -   Train Epoch: 55/  64
+2022-12-22 06:12:25,946 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:12:25,947 - INFO - __main__ -   Mean top-1 acc: 69.03
+
+2022-12-22 06:19:57,692 - INFO - __main__ -   top-1 acc: 68.37
+2022-12-22 06:19:57,693 - INFO - __main__ -   top-5 acc: 97.12
+2022-12-22 06:19:57,759 - INFO - __main__ -   Train Epoch: 56/  64
+2022-12-22 06:19:57,759 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:19:57,760 - INFO - __main__ -   Mean top-1 acc: 68.97
+
+2022-12-22 06:27:26,391 - INFO - __main__ -   top-1 acc: 68.20
+2022-12-22 06:27:26,391 - INFO - __main__ -   top-5 acc: 97.10
+2022-12-22 06:27:26,453 - INFO - __main__ -   Train Epoch: 57/  64
+2022-12-22 06:27:26,454 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:27:26,454 - INFO - __main__ -   Mean top-1 acc: 68.90
+
+2022-12-22 06:34:54,576 - INFO - __main__ -   top-1 acc: 68.11
+2022-12-22 06:34:54,576 - INFO - __main__ -   top-5 acc: 97.07
+2022-12-22 06:34:54,637 - INFO - __main__ -   Train Epoch: 58/  64
+2022-12-22 06:34:54,638 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:34:54,638 - INFO - __main__ -   Mean top-1 acc: 68.83
+
+2022-12-22 06:42:18,310 - INFO - __main__ -   top-1 acc: 68.23
+2022-12-22 06:42:18,310 - INFO - __main__ -   top-5 acc: 97.03
+2022-12-22 06:42:18,376 - INFO - __main__ -   Train Epoch: 59/  64
+2022-12-22 06:42:18,376 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:42:18,376 - INFO - __main__ -   Mean top-1 acc: 68.79
+
+2022-12-22 06:49:45,151 - INFO - __main__ -   top-1 acc: 68.16
+2022-12-22 06:49:45,151 - INFO - __main__ -   top-5 acc: 97.01
+2022-12-22 06:49:45,211 - INFO - __main__ -   Train Epoch: 60/  64
+2022-12-22 06:49:45,211 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:49:45,211 - INFO - __main__ -   Mean top-1 acc: 68.75
+
+2022-12-22 06:56:57,354 - INFO - __main__ -   top-1 acc: 67.99
+2022-12-22 06:56:57,354 - INFO - __main__ -   top-5 acc: 97.07
+2022-12-22 06:56:57,414 - INFO - __main__ -   Train Epoch: 61/  64
+2022-12-22 06:56:57,414 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 06:56:57,415 - INFO - __main__ -   Mean top-1 acc: 68.69
+
+2022-12-22 07:04:10,830 - INFO - __main__ -   top-1 acc: 67.95
+2022-12-22 07:04:10,830 - INFO - __main__ -   top-5 acc: 97.06
+2022-12-22 07:04:10,899 - INFO - __main__ -   Train Epoch: 62/  64
+2022-12-22 07:04:10,899 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 07:04:10,899 - INFO - __main__ -   Mean top-1 acc: 68.63
+
+2022-12-22 07:11:14,142 - INFO - __main__ -   top-1 acc: 67.84
+2022-12-22 07:11:14,142 - INFO - __main__ -   top-5 acc: 96.95
+2022-12-22 07:11:14,204 - INFO - __main__ -   Train Epoch: 63/  64
+2022-12-22 07:11:14,204 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 07:11:14,204 - INFO - __main__ -   Mean top-1 acc: 68.57
+
+2022-12-22 07:18:16,669 - INFO - __main__ -   top-1 acc: 67.61
+2022-12-22 07:18:16,669 - INFO - __main__ -   top-5 acc: 96.94
+2022-12-22 07:18:16,731 - INFO - __main__ -   Train Epoch: 64/  64
+2022-12-22 07:18:16,731 - INFO - __main__ -   Best top-1 acc: 70.20
+2022-12-22 07:18:16,732 - INFO - __main__ -   Mean top-1 acc: 68.50
+

@@ -1,0 +1,1 @@
+python train.py --out results/cifar100@10000.0 --DA
