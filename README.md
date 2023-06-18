@@ -2,5 +2,5 @@
 
 This is a PyTorch implementation of the DualMatch
 
-## usage
+## Usage
   python train.py --out results/cifar100@10000.0 --num-labeled 10000 --seed 0 --DA
